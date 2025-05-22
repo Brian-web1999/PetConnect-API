@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetConnect API</title>
+    <link rel="icon" href="images/api.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-primary text-white align-items-center p-3 gap-3">
+        <img src="images/api.png" alt="Logo" width="64">
+        <h1 class="m-0">PetConnect API REST</h1>
+    </header>
+
+    <main class="container my-4">
+        <p>PetConnect es una API RESTful diseñada para gestionar información relacionada con mascotas y sus dueños. Permite registrar, consultar, actualizar y eliminar datos de mascotas, así como asociarlas con sus respectivos dueños. Además, ofrece funcionalidades de filtrado por especie o nombre, y una estructura organizada basada en el patrón MVC para facilitar la escalabilidad y el mantenimiento del sistema.
+
+        </p>
+
+        <h2>📌 Endpoints disponibles</h2>
+
+        <h3>🐶 Mascotas</h3>
+        <p><span class="badge bg-info">GET</span> <a href="api/mascotas" target="_blank">api/mascotas</a></p>
+        <p><span class="badge bg-info">GET</span> <code>api/mascotas/:id</code></p>
+        <p><span class="badge bg-success">POST</span> <code>api/mascotas</code></p>
+        <pre>
+{
+    "nombre": "Luna",
+    "especie": "Perro",
+    "edad": 3,
+    "duenioId": "681e5f72734b934f2764aac7"
+}
+        </pre>
+
+        <h3>👤 Dueños</h3>
+        <p><span class="badge bg-info">GET</span> <a href="api/duenos" target="_blank">api/duenos</a></p>
+        <p><span class="badge bg-info">GET</span> <code>api/duenos/:id</code></p>
+        <p><span class="badge bg-success">POST</span> <code>api/duenos</code></p>
+        <pre>
+{
+    "nombre": "Cristina Pérez",
+    "email": "cristina@mail.com",
+    "telefono": "1123456789"
+}
+        </pre>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>Alumno: Brian Gonzalez</p>
+        <p>DV | Aplicaciones Híbridas | 2025</p>
+        <p>Docente: Jonathan Cruz </p>
+        <p>Comision: A </p>
+
+    </footer>
+</body>
+</html>
